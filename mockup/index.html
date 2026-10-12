@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1953b8">
+  <title>IDWORLD AI Office | Mockup giao diện</title>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="console-layout.css">
+  <link rel="stylesheet" href="business-dashboard.css">
+  <script defer src="business-data.js"></script>
+  <script defer src="business-views.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Bỏ qua điều hướng</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Điều hướng chính">
+      <div class="brand"><span class="brand-mark">IDW</span><span class="brand-copy"><strong>IDWORLD AI Office</strong><small>Quản trị doanh nghiệp</small></span><button class="sidebar-close" id="sidebar-close" type="button" aria-label="Đóng menu">×</button></div>
+      <div class="sidebar-search"><span class="search-glyph" aria-hidden="true"></span><input id="side-search" type="search" aria-label="Tìm chức năng trong menu" placeholder="Tìm chức năng..."></div>
+      <nav class="primary-nav" id="primary-nav" aria-label="Phân hệ chính"></nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-profile"><span class="profile-avatar">GĐ</span><span><strong>Góc nhìn giám đốc</strong><small>Bản trình diễn IDWORLD</small></span></div>
+      </div>
+    </aside>
+    <div class="mobile-scrim" id="mobile-scrim" hidden></div>
+    <div class="app-main">
+      <header class="topbar">
+        <button class="icon-button menu-button" id="menu-button" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="sidebar"><span class="menu-lines"></span></button>
+        <div class="crumb"><span>IDWORLD AI Office</span><span class="crumb-slash">/</span><strong id="crumb-current">Tổng quan</strong></div>
+        <div class="topbar-actions">
+          <div class="global-search"><span class="search-glyph" aria-hidden="true"></span><input id="global-search" type="search" aria-label="Tìm màn hình hoặc phân hệ" placeholder="Tìm..." autocomplete="off"><kbd>/</kbd><div class="search-results" id="search-results" hidden></div></div>
+          <span class="demo-tag">Dữ liệu minh họa</span>
+          <div class="avatar" aria-label="Góc nhìn giám đốc">GĐ</div>
+        </div>
+      </header>
+      <div class="mobile-demo-note">Dữ liệu minh họa. Thao tác chỉ trong trình duyệt.</div>
+      <main class="content" id="main-content" tabindex="-1"><div class="initial-content"><h1>Điều hành hôm nay</h1><p>Đang mở bản mô phỏng giao diện IDWORLD AI Office.</p></div></main>
+      <footer class="app-footer"><span>Bản mockup để thảo luận phạm vi và giao diện. Thao tác chỉ diễn ra trong trình duyệt.</span><a href="../flowchart/">Xem sơ đồ quy trình <span aria-hidden="true">↗</span></a></footer>
+    </div>
+  </div>
+  <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+  <dialog id="record-drawer" class="record-drawer" aria-labelledby="drawer-title"><div id="drawer-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
